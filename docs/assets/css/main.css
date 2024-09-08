@@ -20,27 +20,27 @@
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
-  --default-color: #212529; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #065b5e; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #1dc8cd; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --default-color: #314261; /* Default color used for the majority of the text content across the entire website */
+  --heading-color: #181840; /* Color for headings, subheadings and title throughout the website */
+  --accent-color: #314261; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-color: rgba(255, 255, 255, 0.6);  /* The default color of the main navmenu links */
-  --nav-hover-color: #ffffff; /* Applied to main navmenu links when they are hovered over or active */
+  --nav-color: rgba(0, 0, 0, 0.6);  /* The default color of the main navmenu links */
+  --nav-hover-color: #314261; /* Applied to main navmenu links when they are hovered over or active */
   --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: #212529; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #1dc8cd; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-dropdown-color: #1e1e59; /* Used for navigation links of the dropdown items in the navigation menu. */
+  --nav-dropdown-hover-color: #1e1e59; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
 .light-background {
-  --background-color: #e9f7f8;
+  --background-color: #fffbf4;
   --surface-color: #ffffff;
 }
 
@@ -158,7 +158,7 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 32px;
+  max-height: 55px;
   margin-right: 8px;
 }
 
@@ -173,7 +173,7 @@ h6 {
 /* Global Header on Scroll
 ------------------------------*/
 .scrolled .header {
-  --background-color: #059ea3;
+  --background-color: #fef7e5;
 }
 
 /*--------------------------------------------------------------
@@ -227,6 +227,7 @@ h6 {
   .navmenu .active,
   .navmenu .active:focus {
     color: var(--nav-hover-color);
+    font-weight: bold;
   }
 
   .navmenu .dropdown ul {
@@ -659,12 +660,28 @@ section,
   width: 100%;
   overflow: hidden;
   position: relative;
-  background: linear-gradient(0deg, var(--background-color) 0%, color-mix(in srgb, var(--background-color) 90%, white 10%) 100%);
   padding: 0;
   display: flex;
   flex-direction: column;
   justify-content: end;
   align-items: center;
+  z-index: 1;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("../img/food2.jpg");
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat; 
+  background-attachment: fixed; 
+  opacity: 0.6; 
+  z-index: -1; 
 }
 
 .hero .carousel-container {
@@ -676,12 +693,15 @@ section,
   position: relative;
   min-height: 70vh;
   padding-top: 60px;
+  /* height: 100vh; */
 }
 
 .hero h2 {
-  margin-bottom: 30px;
-  font-size: 48px;
-  font-weight: 700;
+  margin-bottom: 20px;
+  font-size: 100px;
+  font-weight: 500;
+  font-style: italic;
+  font-family: 'Raleway';
 }
 
 .hero p {
