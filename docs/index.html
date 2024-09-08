@@ -4,555 +4,796 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>WEARISIT</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <title>Index - Avilon Bootstrap Template</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-  <!-- Slider CSS -->
-  <link rel="stylesheet" href="css/style.css">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Open+Sans:300,300i,400,400i,700,700i" rel="stylesheet">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
 
   <!-- =======================================================
-  * Template Name: Avilon - v4.3.0
+  * Template Name: Avilon
   * Template URL: https://bootstrapmade.com/avilon-bootstrap-landing-page-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
 </head>
 
-<body>
+<body class="index-page">
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top d-flex align-items-center header-transparent">
-    <div class="container d-flex justify-content-between align-items-center">
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
-      <div id="logo">
-        <h1><img src="assets/img/logo.png" style="width: 50px; height: 50px;"alt=""> <a href="index.html">
-          <!-- <x style="color:#FFF; font-family: Snell Roundhand"> --> WEARISIT </a>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <a href="index.html"></a></h1>
-      </div>
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="assets/img/logo.png" alt="">
+        <!-- <h1 class="sitename">SpeedyMarket</h1> -->
+      </a>
 
-      <nav id="navbar" class="navbar">
+      <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#features">Features</a></li>
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
-          <li><a class="nav-link scrollto" href="#logic">Logic</a></li>
-          <li><a class="nav-link scrollto" href="#gallery">Video</a></li>
-          <li><a class="nav-link scrollto" href="#team">Team</a></li>
-        <!--   <li><a class="nav-link scrollto" href="#contact">Contact</a></li> -->
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#logic">Logic</a></li>
+          <li><a href="#video">Video</a></li>
+          <li><a href="#team">Team</a></li>
         </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
     </div>
-  </header><!-- End Header -->
+  </header>
 
-  <!-- ======= Hero Section ======= -->
-  <section id="hero">
+  <main class="main">
 
-      <div class="hero-text" data-aos="zoom-out">
-        <br></br>
-        <br></br>
-          <h2>Welcome to <x style="font-weight: bold; font-size:90px;"> WEARISIT</h2>
-<!--           <img src="assets/img/logo.png" style="width: 80px; height: 80px;"alt=""> -->
-          <br></br>
-          <p>Meet your new shopping experience!</p>
-          <a href="#about" class="btn-get-started scrollto">Get Started <!-- <img src="assets/img/logo.png" style="width: 30px; height: 30px;"alt=""> --></a>
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <div id="hero-carousel" data-bs-interval="5000" class="container carousel carousel-fade" data-bs-ride="carousel">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <div class="carousel-container">
+            <h2 class="animate__animated animate__fadeInDown">Welcome to <span>SpeedyMarket</span></h2>
+            <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
+            <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <div class="carousel-container">
+            <h2 class="animate__animated animate__fadeInDown">Lorem Ipsum Dolor</h2>
+            <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
+            <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item">
+          <div class="carousel-container">
+            <h2 class="animate__animated animate__fadeInDown">Sequi ea ut et est quaerat</h2>
+            <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
+            <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+          </div>
+        </div>
+
+        <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+        </a>
+
+        <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        </a>
+
       </div>
 
-      <!--<div class="product-screens">
+      <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
+        <defs>
+          <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+        </defs>
+        <g class="wave1">
+          <use xlink:href="#wave-path" x="50" y="3"></use>
+        </g>
+        <g class="wave2">
+          <use xlink:href="#wave-path" x="50" y="0"></use>
+        </g>
+        <g class="wave3">
+          <use xlink:href="#wave-path" x="50" y="9"></use>
+        </g>
+      </svg>
 
-      <div class="product-screen-1" data-aos="fade-up" data-aos-delay="400">
-        <img src="assets/img/product-screen-1.png" alt="">
-      </div>
+    </section><!-- /Hero Section -->
 
-      <div class="product-screen-2" data-aos="fade-up" data-aos-delay="200">
-        <img src="assets/img/product-screen-2.png" alt="">
-      </div>
+    <!-- About Section -->
+    <section id="about" class="about section">
 
-      <div class="product-screen-3" data-aos="fade-up">
-        <img src="assets/img/product-screen-3.png" alt="">
-      </div>
+      <div class="container">
 
-    </div>-->
+        <div class="row position-relative">
 
-  </section><!-- End Hero Section -->
+          <div class="col-lg-7 about-img" data-aos="zoom-out" data-aos-delay="200"><img src="assets/img/about.jpg"></div>
 
-  <main id="main">
-
-      <!-- ======= About Section ======= -->
-      <section id="about" class="section-bg">
-          <div class="container-fluid" data-aos="fade-up">
-              <div class="section-header">
-                  <h3 class="section-title">About</h3>
-                  <span class="section-divider"></span>
-                  <p class="section-description">
-                      Have you ever been on shopping, found an amazing dress, but struggled finding your size? Now there is a quick solution!<br>
-                      With WEARISIT™ you can find what you are looking for with a press of a button
-                  </p>
-              </div>
-
-              <div class="row">
-                  <div class="col-lg-6 about-img" data-aos="fade-right" dat-aos-delay="100">
-                      <img src="assets/img/woman_scan.png" align="right" alt="" style="float:left;">
-                  </div>
-
-                  <div class="col-lg-6 content" data-aos="fade-left" dat-aos-delay="100">
-                    <br>
-                    <br>
-                      <h2>How it works?</h2>
-                      <h3>
-                          Each item has a unique QR-code attached to its tag, containing the model name, size and a unique number. <br>
-                          WEARISIT™ is consisted of two different mobile applications - one for the customers and the other for the store workers.
-                      </h3>
-
-                      <ul>
-                          <li><i class="bi bi-check-circle"></i> <x style="font-size: 20px;"> Easily keep track of items in the store</li>
-                          <li><i class="bi bi-check-circle"></i> <x style="font-size: 20px;">Make your employees work more efficiently</li>
-                          <li><i class="bi bi-check-circle"></i> <x style="font-size: 20px;">Improve your customers experience</li>
-                      </ul>
-
-                  </div>
-              </div>
-
-          </div>
-      </section><!-- End About Section -->
-      <!-- ======= Featuress Section ======= -->
-      <section id="features">
-          <div class="container" data-aos="fade-up">
-
-              <div class="row">
-
-                  <div class="col-lg-8 offset-lg-4">
-                      <div class="section-header">
-                          <h3 class="section-title">Features - Worker App</h3>
-                          <span class="section-divider"></span>
-                      </div>
-                  </div>
-
-                  <div class="col-lg-4 col-md-5 features-img">
-                      <img src="assets/img/product-features-worker.png" alt="" data-aos="fade-right">
-                  </div>
-
-                  <div class="col-lg-8 col-md-7 ">
-
-                      <div class="row">
-
-                          <div class="col-lg-6 col-md-6 box" data-aos="fade-up">
-                              <div class="icon"><i class="bi bi-box-arrow-in-right"></i></div>
-                              <h4 class="title">Secure Authentication</a></h4>
-                              <p class="description">
-                                  Each worker receives its own username and password. <br>
-                                  The password is going through a process of encryption, and saved encrypted in Azure DB.
-                              </p>
-                          </div>
-                          <div class="col-lg-6 col-md-6 box" data-aos="fade-up">
-                              <div class="icon"><i class="bi bi-plus-circle-dotted"></i></div>
-                              <h4 class="title">Add new items</a></h4>
-                              <p class="description">A new item delivered to store can be added to the system by simple QR scanning and choosing an initial location. </p>
-                          </div>
-                          <div class="col-lg-6 col-md-6 box" data-aos="fade-up" dat-aos-delay="100">
-                              <div class="icon"><i class="bi bi-geo-alt"></i></div>
-                              <h4 class="title">Update locations</a></h4>
-                              <p class="description">The worker updates the item locations according their movement in the store</p>
-                          </div>
-                          <div class="col-lg-6 col-md-6 box" data-aos="fade-up" data-aos-delay="100">
-                              <div class="icon"><i class="bi bi-image"></i></div>
-                              <h4 class="title">Add Image and tags</a></h4>
-                              <p class="description"> Optional feature to connect between an item and its image, and automated process that delievers the most suitable tags.</p>
-                          </div>
-                      </div>
-
-                  </div>
-
-              </div>
-
-          </div>
-
-      </section><!-- End Worker Features Section -->
-      <!--Customer Features -->
-      <section id="features">
-          <div class="container" data-aos="fade-up">
-
-              <div class="row">
-
-                  <div class="col-lg-5 offset-lg-2">
-                      <div class="section-header">
-                          <h3 class="section-title">Features - Customer App</h3>
-                          <span class="section-divider"></span>
-                      </div>
-                  </div>
-
-
-                  <div class="col-lg-8 col-md-7 ">
-
-                      <div class="row">
-
-                          <div class="col-lg-6 col-md-6 box" data-aos="fade-up">
-                              <div class="icon"><i class="bi bi-box-arrow-in-right"></i></div>
-                              <h4 class="title">Secure Authentication</a></h4>
-                              <p class="description">
-                                  The customer can enter as a guest or signup to the app. <br>
-                                  His password is saved encrypted in Azure DB.
-                              </p>
-                          </div>
-                          <div class="col-lg-6 col-md-6 box" data-aos="fade-up">
-                              <div class="icon"><i class="bi bi-upc-scan"></i></div>
-                              <h4 class="title">Find your item</a></h4>
-                              <p class="description">With a simple QR scanning the customer can see sizes and quantities of an item in all locations. </p>
-                          </div>
-                          <div class="col-lg-6 col-md-6 box" data-aos="fade-up" dat-aos-delay="100">
-                              <div class="icon"><i class="bi bi-search"></i></div>
-                              <h4 class="title">Search by tags</a></h4>
-                              <p class="description">Looking for something specific? Tell us what your item should look like, and we'll find it for you. </p>
-                          </div>
-                          <div class="col-lg-6 col-md-6 box" data-aos="fade-up" data-aos-delay="100">
-                              <div class="icon"><i class="bi bi-heart-fill"></i></div>
-                              <h4 class="title">Wishlist</a></h4>
-                              <p class="description"> Saw something you loved? put it on your wishlist and come back to it later.</p>
-                          </div>
-                      </div>
-
-                  </div>
-
-                  <div class="col-lg-4 col-md-5 features-img">
-                      <img src="assets/img/girls-phone.png" alt="" data-aos="fade-right">
-                  </div>
-
-
-              </div>
-
-          </div>
-
-      </section><!-- End Customer Features Section -->
-      <!-- ======= Services Section ======= -->
-      <section id="services" class="section-bg">
-          <div class="container" data-aos="fade-up">
-
-              <div class="section-header">
-                  <h3 class="section-title"> <x style="font-weight: bold; font-size:30px;">Azure Services</h3></x>
-                  <span class="section-divider"></span>
-                  <!--<p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>-->
-              </div>
-
-              <div class="col-lg-4 col-md-5 services-img">
-               
-              </div>
-
-              <div class="row justify-content-center">
-                  <!--         <div class="col-lg-4 col-md-6">
-               <div class="box">
-                   <h3>Free</h3>
-                   <h4><sup>$</sup>0<span> month</span></h4>
-                   <ul>
-                       <li><i class="bi bi-check-circle"></i> Quam adipiscing vitae proin</li>
-                       <li><i class="bi bi-check-circle"></i> Nec feugiat nisl pretium</li>
-                       <li><i class="bi bi-check-circle"></i> Nulla at volutpat diam uteera</li>
-                       <li><i class="bi bi-check-circle"></i> Pharetra massa massa ultricies</li>
-                       <li><i class="bi bi-check-circle"></i> Massa ultricies mi quis hendrerit</li>
-                   </ul>
-                   <a href="#" class="get-started-btn">Get Started</a>
-               </div>
-           </div> -->
-                  <!--         <div class="col-lg-4 col-md-6">
-                <div class="box featured">
-                    <h3>Business</h3>
-                    <h4><sup>$</sup>29<span> month</span></h4>
-                    <ul>
-                        <li><i class="bi bi-check-circle"></i> Quam adipiscing vitae proin</li>
-                        <li><i class="bi bi-check-circle"></i> Nec feugiat nisl pretium</li>
-                        <li><i class="bi bi-check-circle"></i> Nulla at volutpat diam uteera</li>
-                        <li><i class="bi bi-check-circle"></i> Pharetra massa massa ultricies</li>
-                        <li><i class="bi bi-check-circle"></i> Massa ultricies mi quis hendrerit</li>
-                    </ul>
-                    <a href="#" class="get-started-btn">Get Started</a>
-                </div>
-            </div> -->
-
-                  <div class="col">
-                      <div class="centerlized">
-                          <h3>
-                          <br></br>
-                          <i class="bi bi-cloud-check"></i><x style=" font-weight: bold;"> Table storage</x><h5>We used the tables for a number of purposes: storing the credentials of the users in an encrypted manner, managing the inventory and the items locations in the store, and saving tags that characterize the items for a more efficient search in the app. </h5> <h3>
-                          <p> </p>
-                          <i class="bi bi-cloud-check"></i><x style=" font-weight: bold;"> Blob storage </x><h5> Assign pictures to the different models.</h5> <h3> 
-                          <p> </p> <h3>
-                          <img src="assets/img/azure-logo.png" alt="" data-aos="fade-left" style="float:right;">
-                          <i class="bi bi-cloud-check"></i><x style=" font-weight: bold;"> IOT Hub </x><h5>xx xxxxxx xxxx xxxxx xxxx xxxxxx xxxx  of purposes: storing the credentials of the users in an encrypted manner, managing the inventory and the items locations in the store, and saving tags that characterize the items for a more efficient search in the app. </h5> <h3>
-                          <p> </p>
-                          <i class="bi bi-cloud-check"></i><x style=" font-weight: bold;"> Event hub </x> <h5> We created the event hub which receives and processes the events sent from the app to update the storages in the cloud. </h5> <h3>
-                          <p> </p>
-                          <i class="bi bi-cloud-check"></i> <x style=" font-weight: bold;"> Function apps: Http trigger and event trigger </x> <br><h5> Each reading and updating of information in the cloud was done by calling the function app that accessed the appropriate storage table and read / write to the designated field. We used 2 types of functions: Event Trigger when scanning the barcode of a new item, and Http Trigger for the rest of the functionalities. <br> </h5> <h3>
-                          <p> </p>
-                          <i class="bi bi-cloud-check"></i><x style=" font-weight: bold;"> SignalR service </x><br><h5>  This service allows catching changes in real time without the need to refresh the screen. We used this service to inform the customer when an item in which he expressed interest is being moved. The importance of using this service comes from the fact that during business hours, items change their location frequently. <br> </h5> <h3>
-                          <p> </p>
-                          <i class="bi bi-cloud-check"></i> <x style=" font-weight: bold;"> Computer vision - Image processing </x> <br> <h5>  Advanced image processing service, which receives an image of an item as an input, and produces information about it, such as: color, fabric type, etc. This information is translated into tags which are used later for an efficient and customized search of items. <br> </h5> <h3>
-                          </h3>
-                      </div>
-
-                  </div>
-
-              </div>
-          </div>
-      </section><!-- End Services Section -->
-
-      <!-- ======= Logic Section ======= -->
-      <section id="logic">
-          <div class="container" data-aos="fade-up">
-
-              <div class="row">
-                  
-                  <div class="section-header">
-                       <h3 class="section-title">Logic - Behind the Scenes</h3>
-                       <span class="section-divider"></span>
-                  </div>
-                  
-
-                  <div class="col-lg-4 col-md-5 logics-img">
-                      <img src="assets/img/logic-img.png" alt="" data-aos="fade-right">
-                  </div>
-
-              </div>
-
-          </div>
-
-      </section><!-- End Logic Section -->
-
-      <!-- ======= Frequently Asked Questions Section ======= -->
-      <!--<section id="faq">
-          <div class="container">
-
-              <div class="section-header">
-                  <h3 class="section-title">Frequently Asked Questions</h3>
-                  <span class="section-divider"></span>
-                  <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
-              </div>
-
-              <ul class="faq-list">
-
-                  <li>
-                      <div data-bs-toggle="collapse" class="collapsed question" href="#faq1">Non consectetur a erat nam at lectus urna duis? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
-                      <div id="faq1" class="collapse" data-bs-parent=".faq-list">
-                          <p>
-                              Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
-                          </p>
-                      </div>
-                  </li>
-
-                  <li>
-                      <div data-bs-toggle="collapse" href="#faq2" class="collapsed question">Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
-                      <div id="faq2" class="collapse" data-bs-parent=".faq-list">
-                          <p>
-                              Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
-                          </p>
-                      </div>
-                  </li>
-
-                  <li>
-                      <div data-bs-toggle="collapse" href="#faq3" class="collapsed question">Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
-                      <div id="faq3" class="collapse" data-bs-parent=".faq-list">
-                          <p>
-                              Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
-                          </p>
-                      </div>
-                  </li>
-
-                  <li>
-                      <div data-bs-toggle="collapse" href="#faq4" class="collapsed question">Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
-                      <div id="faq4" class="collapse" data-bs-parent=".faq-list">
-                          <p>
-                              Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
-                          </p>
-                      </div>
-                  </li>
-
-                  <li>
-                      <div data-bs-toggle="collapse" href="#faq5" class="collapsed question">Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
-                      <div id="faq5" class="collapse" data-bs-parent=".faq-list">
-                          <p>
-                              Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in
-                          </p>
-                      </div>
-                  </li>
-
-                  <li>
-                      <div data-bs-toggle="collapse" href="#faq6" class="collapsed question">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
-                      <div id="faq6" class="collapse" data-bs-parent=".faq-list">
-                          <p>
-                              Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque. Pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Nibh tellus molestie nunc non blandit massa enim nec.
-                          </p>
-                      </div>
-                  </li>
-
+          <div class="col-lg-7" data-aos="fade-up" data-aos-delay="100">
+            <h2 class="inner-title">Consequatur eius et magnam</h2>
+            <div class="our-story">
+              <h4>Est 1988</h4>
+              <h3>Our Story</h3>
+              <p>Inventore aliquam beatae at et id alias. Ipsa dolores amet consequuntur minima quia maxime autem. Quidem id sed ratione. Tenetur provident autem in reiciendis rerum at dolor. Aliquam consectetur laudantium temporibus dicta minus dolor.</p>
+              <ul>
+                <li><i class="bi bi-check-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commo</span></li>
+                <li><i class="bi bi-check-circle"></i> <span>Duis aute irure dolor in reprehenderit in</span></li>
+                <li><i class="bi bi-check-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea</span></li>
               </ul>
+              <p>Vitae autem velit excepturi fugit. Animi ad non. Eligendi et non nesciunt suscipit repellendus porro in quo eveniet. Molestias in maxime doloremque.</p>
+
+              <div class="watch-video d-flex align-items-center position-relative">
+                <i class="bi bi-play-circle"></i>
+                <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox stretched-link">Watch Video</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Clients Section -->
+    <section id="clients" class="clients section light-background">
+
+      <div class="container" data-aos="fade-up">
+
+        <div class="row gy-4">
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="assets/img/clients/client-1.png" class="img-fluid" alt="">
+          </div><!-- End Client Item -->
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="assets/img/clients/client-2.png" class="img-fluid" alt="">
+          </div><!-- End Client Item -->
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="assets/img/clients/client-3.png" class="img-fluid" alt="">
+          </div><!-- End Client Item -->
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="assets/img/clients/client-4.png" class="img-fluid" alt="">
+          </div><!-- End Client Item -->
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="assets/img/clients/client-5.png" class="img-fluid" alt="">
+          </div><!-- End Client Item -->
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="assets/img/clients/client-6.png" class="img-fluid" alt="">
+          </div><!-- End Client Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Clients Section -->
+
+    <!-- Features 2 Section -->
+    <section id="features-2" class="features section features-2">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Features</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4 justify-content-between">
+          <div class="features-image col-lg-4 d-flex align-items-center" data-aos="fade-up">
+            <img src="assets/img/features.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-7 d-flex flex-column justify-content-center">
+
+            <div class="features-item d-flex" data-aos="fade-up" data-aos-delay="200">
+              <i class="bi bi-archive flex-shrink-0"></i>
+              <div>
+                <h4>Est labore ad</h4>
+                <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+              </div>
+            </div><!-- End Features Item-->
+
+            <div class="features-item d-flex mt-5" data-aos="fade-up" data-aos-delay="300">
+              <i class="bi bi-basket flex-shrink-0"></i>
+              <div>
+                <h4>Harum esse qui</h4>
+                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+              </div>
+            </div><!-- End Features Item-->
+
+            <div class="features-item d-flex mt-5" data-aos="fade-up" data-aos-delay="400">
+              <i class="bi bi-broadcast flex-shrink-0"></i>
+              <div>
+                <h4>Aut occaecati</h4>
+                <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
+              </div>
+            </div><!-- End Features Item-->
+
+            <div class="features-item d-flex mt-5 " data-aos="fade-up" data-aos-delay="500">
+              <i class="bi bi-camera-reels flex-shrink-0"></i>
+              <div>
+                <h4>Beatae veritatis</h4>
+                <p>Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta</p>
+              </div>
+            </div><!-- End Features Item-->
 
           </div>
-      </section>--><!-- End Frequently Asked Questions Section -->
+        </div>
 
-      <!-- ======= Gallery Section ======= -->
-      <section id="gallery">
-          <div class="container-fluid" data-aos="fade-up">
-              <div class="section-header">
-                  <h3 class="section-title">How it works?</h3>
-                  <span class="section-divider"></span>
-                  <p class="section-description">Let's have a quick look what's all about</p>
+      </div>
 
-                  
-                  <!-- Start slider -->
-          <!-- <section class="auto-slider">
-            <div class="row justify-content-center">
-                      <div id="slider">
-                          <figure>
-                              <img src="assets/img/gallery/gallery-3.jpg" alt="Image">
-                              <img src="assets/img/gallery/gallery-4.jpg" alt="Image">
-                              <img src="assets/img/gallery/gallery-5.jpg" alt="Image">
-                              <img src="assets/img/gallery/gallery-6.jpg" alt="Image">
-                          </figure>
-                          <div class="indicator"></div>
-                      </div>
-                      </div>
-          </section> -->
-                  <!-- end slider -->
+    </section><!-- /Features 2 Section -->
 
-                  <p align="center"> <iframe width="800" height="630" src="https://www.youtube.com/embed/J---aiyznGQ"> </iframe></p>
+    <!-- Services Section -->
+    <section id="services" class="services section">
 
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Services</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-activity"></i>
+              </div>
+              <a href="service-details.html" class="stretched-link">
+                <h3>Nesciunt Mete</h3>
+              </a>
+              <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-broadcast"></i>
+              </div>
+              <a href="service-details.html" class="stretched-link">
+                <h3>Eosle Commodi</h3>
+              </a>
+              <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-easel"></i>
+              </div>
+              <a href="service-details.html" class="stretched-link">
+                <h3>Ledo Markt</h3>
+              </a>
+              <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-bounding-box-circles"></i>
+              </div>
+              <a href="service-details.html" class="stretched-link">
+                <h3>Asperiores Commodit</h3>
+              </a>
+              <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
+              <a href="service-details.html" class="stretched-link"></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-calendar4-week"></i>
+              </div>
+              <a href="service-details.html" class="stretched-link">
+                <h3>Velit Doloremque</h3>
+              </a>
+              <p>Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem alias eius labore.</p>
+              <a href="service-details.html" class="stretched-link"></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-chat-square-text"></i>
+              </div>
+              <a href="service-details.html" class="stretched-link">
+                <h3>Dolori Architecto</h3>
+              </a>
+              <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
+              <a href="service-details.html" class="stretched-link"></a>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+    <!-- Call To Action Section -->
+    <section id="call-to-action" class="call-to-action section dark-background">
+
+      <img src="assets/img/cta-bg.jpg" alt="">
+
+      <div class="container">
+        <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-xl-10">
+            <div class="text-center">
+              <h3>Call To Action</h3>
+              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <a class="cta-btn" href="#">Call To Action </a>
+            </div>
           </div>
-          </div>
-      </section><!-- End Gallery Section -->
+        </div>
+      </div>
 
+    </section><!-- /Call To Action Section -->
 
-       <!-- ======= Team Section ======= -->
-      <section id="team" class="section-bg">
-          <div class="container" data-aos="fade-up">
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing section">
 
-              <div class="section-header">
-                  <h2 class="section-title">Who we are</h2>
-                  <span class="section-divider"></span>
-                  <p class="section-description">This project was submitted by Gal Shani, Eldar Magrafta and Hadas Vardi.<br>
-                  At the time of submission we were last-year Computer Science students at Tel-Aviv University.<br>
-                  The workshop was guided by Mr.Nir Levy and Ms.Shelly Grossman <br>
-                  August 11th, 2021.</p>
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Pricing</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="zoom-in" data-aos-delay="100">
+
+        <div class="row g-4">
+
+          <div class="col-lg-4">
+            <div class="pricing-item">
+              <h3>Free Plan</h3>
+              <div class="icon">
+                <i class="bi bi-box"></i>
+              </div>
+              <h4><sup>$</sup>0<span> / month</span></h4>
+              <ul>
+                <li><i class="bi bi-check"></i> <span>Quam adipiscing vitae proin</span></li>
+                <li><i class="bi bi-check"></i> <span>Nec feugiat nisl pretium</span></li>
+                <li><i class="bi bi-check"></i> <span>Nulla at volutpat diam uteera</span></li>
+                <li class="na"><i class="bi bi-x"></i> <span>Pharetra massa massa ultricies</span></li>
+                <li class="na"><i class="bi bi-x"></i> <span>Massa ultricies mi quis hendrerit</span></li>
+              </ul>
+              <div class="text-center"><a href="#" class="buy-btn">Buy Now</a></div>
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <div class="col-lg-4">
+            <div class="pricing-item featured">
+              <h3>Business Plan</h3>
+              <div class="icon">
+                <i class="bi bi-rocket"></i>
               </div>
 
-    
-
-        <div class="row justify-content-center">
-          <div class="col-lg-3 col-md-6 col-sm">
-            <div class="member">
-              <div class="pic"><img src="assets/img/team/team-1.jpg" alt=""></div>
-              <h4>Eldar Magrafta</h4>
-              <!-- <span>Chief Executive Officer</span> -->
-            
+              <h4><sup>$</sup>29<span> / month</span></h4>
+              <ul>
+                <li><i class="bi bi-check"></i> <span>Quam adipiscing vitae proin</span></li>
+                <li><i class="bi bi-check"></i> <span>Nec feugiat nisl pretium</span></li>
+                <li><i class="bi bi-check"></i> <span>Nulla at volutpat diam uteera</span></li>
+                <li><i class="bi bi-check"></i> <span>Pharetra massa massa ultricies</span></li>
+                <li><i class="bi bi-check"></i> <span>Massa ultricies mi quis hendrerit</span></li>
+              </ul>
+              <div class="text-center"><a href="#" class="buy-btn">Buy Now</a></div>
             </div>
-          </div>
+          </div><!-- End Pricing Item -->
 
-          <div class="col-lg-3 col-md-6 col-sm">
-            <div class="member">
-              <div class="pic"><img src="assets/img/team/team-2.jpg" alt=""></div>
-              <h4>Gal Shani</h4>
-              <!-- <span>Product Manager</span> -->
-      
-          </div>
-          </div>
-
-         <div class="col-lg-3 col-md-6 col-sm">
-            <div class="member">
-              <div class="pic"><img src="assets/img/team/team-4.jpg" alt=""></div>
-              <h4>Hadas Vardi</h4>
-              <!-- <span>Accountant</span> -->
+          <div class="col-lg-4">
+            <div class="pricing-item">
+              <h3>Developer Plan</h3>
+              <div class="icon">
+                <i class="bi bi-send"></i>
+              </div>
+              <h4><sup>$</sup>49<span> / month</span></h4>
+              <ul>
+                <li><i class="bi bi-check"></i> <span>Quam adipiscing vitae proin</span></li>
+                <li><i class="bi bi-check"></i> <span>Nec feugiat nisl pretium</span></li>
+                <li><i class="bi bi-check"></i> <span>Nulla at volutpat diam uteera</span></li>
+                <li><i class="bi bi-check"></i> <span>Pharetra massa massa ultricies</span></li>
+                <li><i class="bi bi-check"></i> <span>Massa ultricies mi quis hendrerit</span></li>
+              </ul>
+              <div class="text-center"><a href="#" class="buy-btn">Buy Now</a></div>
             </div>
-          </div>
+          </div><!-- End Pricing Item -->
+
         </div>
 
+      </div>
+
+    </section><!-- /Pricing Section -->
+
+    <!-- Faq Section -->
+    <section id="faq" class="faq section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Frequently Asked Questions</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
         <div class="row justify-content-center">
-                  <div class="col">
-                      <div class="info">
-                        <div>
-                          <i class="bi bi-github"> GitHub</i><br>
-                             <a href="https://images.app.goo.gl/jWktssGiYnspceBx8" target="_blank" rel="noopener noreferrer"> Check our project</a>
-                              
-                              
-                          </p>
 
+          <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
 
-                           <i class="bi bi-envelope"> Contact</i><br>
-                              <a href=mailto:<eldarm@mail.tau.ac.il> eldarm@mail.tau.ac.il</a><br>
-                              <a href=mailto:<galshani1@mail.tau.ac.il> galshani1@mail.tau.ac.il</a><br>
-                              <a href=mailto:<hadasvardi@mail.tau.ac.il> hadasvardi@mail.tau.ac.il</a><br>
-                          </p>
+            <div class="faq-container">
 
-                        </div>
-                      </div>
-                       </div>
-                        </div>
+              <div class="faq-item faq-active">
+                <h3>Non consectetur a erat nam at lectus urna duis?</h3>
+                <div class="faq-content">
+                  <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
 
+              <div class="faq-item">
+                <h3>Feugiat scelerisque varius morbi enim nunc faucibus?</h3>
+                <div class="faq-content">
+                  <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
 
+              <div class="faq-item">
+                <h3>Dolor sit amet consectetur adipiscing elit pellentesque?</h3>
+                <div class="faq-content">
+                  <p>Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
 
+              <div class="faq-item">
+                <h3>Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?</h3>
+                <div class="faq-content">
+                  <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
 
-      </section><!-- End Team Section -->
+              <div class="faq-item">
+                <h3>Tempus quam pellentesque nec nam aliquam sem et tortor?</h3>
+                <div class="faq-content">
+                  <p>Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
 
+              <div class="faq-item">
+                <h3>Perspiciatis quod quo quos nulla quo illum ullam?</h3>
+                <div class="faq-content">
+                  <p>Enim ea facilis quaerat voluptas quidem et dolorem. Quis et consequatur non sed in suscipit sequi. Distinctio ipsam dolore et.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
 
+            </div>
 
+          </div><!-- End Faq Column-->
 
-  </main><!-- End #main -->
+        </div>
 
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
+      </div>
+
+    </section><!-- /Faq Section -->
+
+    <!-- Team Section -->
+    <section id="team" class="team section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Team</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="member">
+              <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
+              <div class="member-content">
+                <h4>Walter White</h4>
+                <span>Web Development</span>
+                <p>
+                  Magni qui quod omnis unde et eos fuga et exercitationem. Odio veritatis perspiciatis quaerat qui aut aut aut
+                </p>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
+            <div class="member">
+              <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
+              <div class="member-content">
+                <h4>Sarah Jhinson</h4>
+                <span>Marketing</span>
+                <p>
+                  Repellat fugiat adipisci nemo illum nesciunt voluptas repellendus. In architecto rerum rerum temporibus
+                </p>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
+            <div class="member">
+              <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
+              <div class="member-content">
+                <h4>William Anderson</h4>
+                <span>Content</span>
+                <p>
+                  Voluptas necessitatibus occaecati quia. Earum totam consequuntur qui porro et laborum toro des clara
+                </p>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Team Section -->
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Gallery</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      </div><!-- End Section Title -->
+
+      <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-0">
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-1.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/gallery/gallery-1.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-2.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/gallery/gallery-2.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-3.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/gallery/gallery-3.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-4.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/gallery/gallery-4.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-5.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/gallery/gallery-5.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-6.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/gallery/gallery-6.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-7.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/gallery/gallery-7.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-8.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/gallery/gallery-8.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Gallery Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4">
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+              <i class="bi bi-geo-alt flex-shrink-0"></i>
+              <div>
+                <h3>Address</h3>
+                <p>A108 Adam Street, New York, NY 535022</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+              <i class="bi bi-telephone flex-shrink-0"></i>
+              <div>
+                <h3>Call Us</h3>
+                <p>+1 5589 55488 55</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+              <i class="bi bi-envelope flex-shrink-0"></i>
+              <div>
+                <h3>Email Us</h3>
+                <p>info@example.com</p>
+              </div>
+            </div><!-- End Info Item -->
+
+          </div>
+
+          <div class="col-lg-8">
+            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                </div>
+
+                <div class="col-md-6 ">
+                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                  <button type="submit">Send Message</button>
+                </div>
+
+              </div>
+            </form>
+          </div><!-- End Contact Form -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer light-background">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-6 text-lg-start text-center">
-          <div class="copyright">
-            &copy; Copyright <strong>Avilon</strong>. All Rights Reserved
-          </div>
-          <div class="credits">
-            <!--
-            All the links in the footer should remain intact.
-            You can delete the links only if you purchased the pro version.
-            Licensing information: https://bootstrapmade.com/license/
-            Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Avilon
-          -->
-            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-          </div>
+      <h3 class="sitename">SpeedyMarket</h3>
+      <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p>
+      <div class="social-links d-flex justify-content-center">
+        <a href=""><i class="bi bi-twitter-x"></i></a>
+        <a href=""><i class="bi bi-facebook"></i></a>
+        <a href=""><i class="bi bi-instagram"></i></a>
+        <a href=""><i class="bi bi-skype"></i></a>
+        <a href=""><i class="bi bi-linkedin"></i></a>
+      </div>
+      <div class="container">
+        <div class="copyright">
+          <span>Copyright</span> <strong class="px-1 sitename">SpeedyMarket</strong> <span>All Rights Reserved</span>
         </div>
-        <div class="col-lg-6">
-          <nav class="footer-links text-lg-right text-center pt-2 pt-lg-0">
-            <a href="#intro" class="scrollto">Home</a>
-            <a href="#about" class="scrollto">About</a>
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms of Use</a>
-          </nav>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you've purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
         </div>
       </div>
     </div>
-  </footer><!-- End  Footer -->
+  </footer>
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-chevron-up"></i></a>
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
-  <!-- Template Main JS File -->
+  <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 
 </body>
