@@ -693,7 +693,7 @@ section,
   position: relative;
   min-height: 70vh;
   padding-top: 60px;
-  /* height: 100vh; */
+  height: 100vh;
 }
 
 .hero h2 {
